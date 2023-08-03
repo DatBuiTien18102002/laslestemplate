@@ -1,0 +1,144 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 45px 0;
+  z-index: 1000;
+  background-color: $white-color;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+
+.menu-item {
+}
+
+.menu-link {
+}
+
+.header-auth {
+  display: flex;
+
+  height: 100%;
+  align-items: center;
+  gap: 30px;
+  font-weight: 500;
+}
+
+.header-login {
+}
+
+//---------mobie--------------
+.header_menu-mobie-btn {
+  background-color: transparent;
+  padding: 10px 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+  span {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 4px;
+    background-color: $text-color;
+    border-radius: 999px;
+    transition: 0.5s;
+  }
+  span:nth-child(1) {
+    transform-origin: left;
+  }
+  span:nth-child(2) {
+    margin: 4px 0;
+    transform-origin: center;
+  }
+  span:nth-child(3) {
+    transform-origin: left;
+  }
+}
+
+.nav__overplay {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 124px;
+  display: none;
+  animation: fadeIn 2s linear;
+}
+
+.header_menu-mobie {
+  position: fixed;
+  top: 126px;
+  right: 0;
+  bottom: 0;
+  background-color: $white-color;
+  width: 320px;
+  max-width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.5s linear;
+}
+
+.header_menu-mobie-list {
+  margin: 50px 40px;
+}
+
+.header_menu-mobie-item {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.header_menu-mobie-item:last-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav__mobie-input:checked {
+  ~ .header_menu-mobie-btn {
+    span:nth-child(1) {
+      transform: rotate(35deg);
+      left: 5px;
+      top: -2px;
+    }
+    span:nth-child(2) {
+      transform: rotate(323deg);
+      // right: 3px;
+    }
+    span:nth-child(3) {
+      transform: scaleX(0);
+    }
+  }
+
+  ~ .nav__overplay {
+    display: block;
+  }
+  ~ .header_menu-mobie {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .col-auto:nth-child(2),
+  .col-auto:nth-child(3) {
+    display: none;
+  }
+
+  .header_menu-mobie-btn {
+    display: block;
+  }
+}

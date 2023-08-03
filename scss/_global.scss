@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  line-height: 1;
+  font-family: $font;
+  background-color: $white-color;
+  color: $text-color;
+  font-size: 1.6rem;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover {
+    color: currentColor;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 999px;
+
+  width: fit-content;
+
+  font-family: $font;
+  line-height: 1;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  border: transparent;
+
+  cursor: pointer;
+
+  + .button {
+    margin-left: 10px;
+  }
+
+  &--primary {
+    position: relative;
+    font-weight: 700;
+    background-color: $primary-color;
+    color: white;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+    box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+  }
+  &--outline {
+    background-color: transparent;
+    color: $primary-color;
+    border: 1px solid;
+    font-weight: 500;
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+    }
+  }
+
+  &--rounded {
+    border-radius: 10px;
+  }
+}
+
+.tittle {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: calc(50 / 35);
+  color: $heading-color;
+}
+.text {
+  font-size: 1.6rem;
+  line-height: calc(30 / 16);
+}

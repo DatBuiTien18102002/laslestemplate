@@ -1,0 +1,156 @@
+.customer {
+  // margin-bottom: 65px;
+}
+
+.customer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customer-tittle {
+  max-width: 447px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.customer-text {
+  max-width: 555px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.customer-list {
+  width: 100%;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // gap: 50px;
+  // align-items: center;
+}
+
+.customer-item {
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  height: inherit;
+  margin-right: 50px;
+
+  &.slick-current.slick-active {
+    border-color: $primary-color;
+  }
+}
+
+.customer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+}
+
+.customer-avatar {
+  margin-right: 20px;
+}
+
+.customer-content {
+}
+
+.customer-name {
+  font-size: 1.8rem;
+
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.customer-address {
+  font-size: 1.4rem;
+}
+
+.customer-rating {
+  display: flex;
+  align-items: center;
+  span {
+    margin-right: 10px;
+  }
+}
+
+.customer-comment {
+}
+
+//slick slider
+
+.slick-track {
+  display: flex;
+  // gap: 0 50px;
+  padding-bottom: 60px;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 100rem;
+  border: 1px solid $primary-color;
+  z-index: 10;
+}
+
+.slick-prev {
+  background-color: transparent;
+  right: 80px;
+}
+
+.slick-next {
+  background-color: $primary-color;
+  right: 0;
+}
+
+.slick-dots {
+  transform: translateY(50%);
+
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+
+  list-style: none;
+
+  button {
+    width: 15px;
+    height: 15px;
+    border-radius: 999px;
+    background-color: #dde0e4;
+    font-size: 0;
+    border: transparent;
+    transition: all 0.2s linear;
+  }
+
+  .slick-active button {
+    width: 45px;
+    background-color: $primary-color;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .slick-track {
+    padding-bottom: 30px;
+  }
+  .slick-dots {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .customer-item {
+    margin-right: 0;
+  }
+}
