@@ -20,7 +20,7 @@ body {
   color: $text-color;
   font-size: 1.6rem;
   font-weight: 400;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 a {
@@ -109,4 +109,10 @@ h6 {
 .text {
   font-size: 1.6rem;
   line-height: calc(30 / 16);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
 }

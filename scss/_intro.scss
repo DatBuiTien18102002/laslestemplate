@@ -59,3 +59,20 @@
     line-height: calc(30 / 13);
   }
 }
+
+@media screen and (max-width: 575px) {
+  .intro-img {
+    margin-bottom: 10px;
+  }
+
+  .intro-tittle {
+    text-align: center;
+  }
+  .intro__item {
+    flex-direction: column;
+  }
+
+  .intro-info {
+    padding: 0;
+  }
+}

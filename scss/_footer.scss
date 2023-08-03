@@ -2,8 +2,12 @@
   padding: 146px 0 100px;
   background-color: #f8f8f8;
 
-  .gx-lg-5 {
-    --bs-gutter-x: 230px;
+  .pr {
+    padding-right: 115px;
+  }
+
+  .pl {
+    padding-left: 115px;
   }
 }
 
@@ -58,7 +62,29 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1999px) {
+  .footer {
+    .pr {
+      padding-right: 57.5px;
+    }
+
+    .pl {
+      padding-left: 57.5px;
+    }
+  }
+}
+
 @media screen and (max-width: 991px) {
+  .footer {
+    .pr {
+      padding-right: 7.5px;
+    }
+
+    .pl {
+      padding-left: 7.5px;
+    }
+  }
+
   .footer-contact {
     margin-top: 30px;
   }

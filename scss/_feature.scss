@@ -1,7 +1,12 @@
 .feature {
   padding-bottom: 131px;
-  .gx-lg-5 {
-    --bs-gutter-x: 170px;
+
+  .pl {
+    padding-left: 85px;
+  }
+
+  .pr {
+    padding-right: 85px;
   }
   background-color: $white-color;
 }
@@ -47,8 +52,12 @@
   }
 
   .feature {
-    .gx-lg-5 {
-      --bs-gutter-x: 30px;
+    .pl {
+      padding-left: 15px;
+    }
+
+    .pr {
+      padding-right: 15px;
     }
   }
 
@@ -64,5 +73,16 @@
 
   .feature-item {
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .feature {
+    .pl {
+      padding-left: 7.5px;
+    }
+
+    .pr {
+      padding-right: 7.5px;
+    }
   }
 }

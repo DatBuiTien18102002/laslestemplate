@@ -6,6 +6,12 @@
   padding: 45px 0;
   z-index: 1000;
   background-color: $white-color;
+
+  .row {
+    .col-auto:nth-child(4) {
+      display: none;
+    }
+  }
 }
 
 .header-logo {
@@ -136,6 +142,14 @@
   .col-auto:nth-child(2),
   .col-auto:nth-child(3) {
     display: none;
+  }
+
+  .header {
+    .row {
+      .col-auto:nth-child(4) {
+        display: block;
+      }
+    }
   }
 
   .header_menu-mobie-btn {
